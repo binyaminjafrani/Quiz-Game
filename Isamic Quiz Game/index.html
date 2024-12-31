@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>🌟 Islamic Quiz Game 🌟</h1>
+        <div id="difficulty-selector">
+            <h2>Select Level</h2>
+            <button class="difficulty-btn" onclick="startQuiz('easy')">Easy</button>
+            <button class="difficulty-btn" onclick="startQuiz('medium')">Medium</button>
+            <button class="difficulty-btn" onclick="startQuiz('hard')">Hard</button>
+        </div>
+        <div id="question-container" class="hidden">
+            <h2 id="question">Question will appear here</h2>
+            <div id="answers" class="answers-grid"></div>
+        </div>
+        <div id="result-container" class="hidden">
+            <h2 id="result-text">Quiz Completed!</h2>
+            <p id="score">Your Score: 0</p>
+            <button id="restart-btn" onclick="resetQuiz()">Restart Quiz</button>
+        </div>
+        <div id="reward-container" class="hidden">
+            <h2>🎉 Congratulations! 🎉</h2>
+            <p>You earned a badge!</p>
+            <img src="Coins.png" alt="Reward Badge" class="reward">
+            <button id="continue-btn" onclick="nextQuestion()">Next Question</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
